@@ -4,11 +4,18 @@
 namespace PsalmTemplate;
 
 /**
- * @template T
+ * @template T of object
  */
-class AbstractRepository {
+abstract class AbstractRepository
+{
+    /**
+    * @var class-string<T> $class
+    */
     private string $class;
 
+    /**
+     * @psalm-param class-string<T> $class
+     */
     public function __construct(string $class)
     {
         $this->class = $class;
