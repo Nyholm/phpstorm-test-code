@@ -1,0 +1,19 @@
+{
+    "name": "tobias/phpstorm-test-code",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nyholm",
+            "email": "tobias.nyholm@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">= 7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "PsalmTemplate\\": "psalm-template/"
+        }
+    }
+}
